@@ -5,12 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Search &#8212; Sphinx Hypothes.is  documentation</title>
+    <title>Utterance &#8212; Sphinx Hypothes.is  documentation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/sphinx-book-theme.js"></script>
     <script src="_static/jquery.js"></script>
@@ -146,15 +145,12 @@
             }
             commentsRunWhenDOMLoaded(addUtterances);
             </script>
-    <script src="_static/searchtools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
-  <script src="searchindex.js" defer></script>
-  
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="dokieli" href="dokieli.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-
 
 
 
@@ -176,13 +172,13 @@
 </a>
 </div>
 
-<form class="bd-search d-flex align-items-center" action="#" method="get">
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="nav sidenav_l1">
+  <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="hypothesis.html">
    Hypothesis
@@ -193,8 +189,8 @@
    dokieli
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="utterances.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Utterance
   </a>
  </li>
@@ -236,6 +232,18 @@
             class="fas fa-download"></i></button>
 
     
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/utterances.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
 </div>
         <!-- Source interaction buttons -->
 
@@ -251,8 +259,23 @@
 
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#activate-utteranc-es">
+   Activate
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     utteranc.es
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -261,29 +284,38 @@
         
               <div>
                 
-  <h1 id="search-documentation">Search</h1>
-  <div id="fallback" class="admonition warning">
-  <script>$('#fallback').hide();</script>
-  <p>
-    Please activate JavaScript to enable the search
-    functionality.
-  </p>
-  </div>
-  <p>
-    From here you can search these documents. Enter your search
-    words into the box below and click "search". Note that the search
-    function will automatically search for all of the words. Pages
-    containing fewer words won't appear in the result list.
-  </p>
-  <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" />
-    <input type="submit" value="search" />
-    <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
-  
-  <div id="search-results">
-  
-  </div>
+  <div class="section" id="utterance">
+<h1>Utterance<a class="headerlink" href="#utterance" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="activate-utteranc-es">
+<h2>Activate <code class="docutils literal notranslate"><span class="pre">utteranc.es</span></code><a class="headerlink" href="#activate-utteranc-es" title="Permalink to this headline">¶</a></h2>
+<p>You can activate <code class="docutils literal notranslate"><span class="pre">utteranc.es</span></code> by adding the following to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">comments_config</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s2">&quot;utterances&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;github-org/github-repo&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;optional&quot;</span><span class="p">:</span> <span class="s2">&quot;config&quot;</span><span class="p">,</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can pass optional extra configuration for utterances. See
+<a class="reference external" href="https://utteranc.es/#theme">the utterances documentation for your options</a>.</p>
+</div>
+<p>Next, <a class="reference external" href="https://utteranc.es/#configuration">follow the <code class="docutils literal notranslate"><span class="pre">utteranc.es</span></code> configuration instructions</a>.</p>
+<p>When you build your documentation, pages will now have a comment box at the bottom. If readers log in via GitHub they will be able to post comments that will then map onto issues in your GitHub repository.</p>
+<script
+   type="text/javascript"
+   src="https://utteranc.es/client.js"
+   async="async"
+   repo="executablebooks/sphinx-comments"
+   issue-term="pathname"
+   theme="github-light"
+   label="💬 comment"
+   crossorigin="anonymous"
+/></div>
+</div>
+
 
               </div>
               
@@ -293,6 +325,7 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="dokieli.html" title="previous page">dokieli</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

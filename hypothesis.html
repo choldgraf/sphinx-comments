@@ -5,12 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Search &#8212; Sphinx Hypothes.is  documentation</title>
+    <title>Hypothesis &#8212; Sphinx Hypothes.is  documentation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/sphinx-book-theme.js"></script>
     <script src="_static/jquery.js"></script>
@@ -82,79 +81,13 @@
             }
             commentsRunWhenDOMLoaded(addUtterances);
             </script>
-    <script >
-            
-                var commentsRunWhenDOMLoaded = cb => {
-                if (document.readyState != 'loading') {
-                    cb()
-                } else if (document.addEventListener) {
-                    document.addEventListener('DOMContentLoaded', cb)
-                } else {
-                    document.attachEvent('onreadystatechange', function() {
-                    if (document.readyState == 'complete') cb()
-                    })
-                }
-                }
-            
-            var addUtterances = () => {
-                var script = document.createElement("script");
-                script.type = "text/javascript";
-                script.src = "https://utteranc.es/client.js";
-                script.async = "async";
-
-                script.setAttribute("repo", "executablebooks/sphinx-comments");
-                script.setAttribute("issue-term", "pathname");
-                script.setAttribute("theme", "github-light");
-                script.setAttribute("label", "💬 comment");
-                script.setAttribute("crossorigin", "anonymous");
-
-                sections = document.querySelectorAll("div.section");
-                section = sections[sections.length-1];
-                section.appendChild(script);
-            }
-            commentsRunWhenDOMLoaded(addUtterances);
-            </script>
-    <script >
-            
-                var commentsRunWhenDOMLoaded = cb => {
-                if (document.readyState != 'loading') {
-                    cb()
-                } else if (document.addEventListener) {
-                    document.addEventListener('DOMContentLoaded', cb)
-                } else {
-                    document.attachEvent('onreadystatechange', function() {
-                    if (document.readyState == 'complete') cb()
-                    })
-                }
-                }
-            
-            var addUtterances = () => {
-                var script = document.createElement("script");
-                script.type = "text/javascript";
-                script.src = "https://utteranc.es/client.js";
-                script.async = "async";
-
-                script.setAttribute("repo", "executablebooks/sphinx-comments");
-                script.setAttribute("issue-term", "pathname");
-                script.setAttribute("theme", "github-light");
-                script.setAttribute("label", "💬 comment");
-                script.setAttribute("crossorigin", "anonymous");
-
-                sections = document.querySelectorAll("div.section");
-                section = sections[sections.length-1];
-                section.appendChild(script);
-            }
-            commentsRunWhenDOMLoaded(addUtterances);
-            </script>
-    <script src="_static/searchtools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
-  <script src="searchindex.js" defer></script>
-  
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="dokieli" href="dokieli.html" />
+    <link rel="prev" title="Sphinx Comments" href="index.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-
 
 
 
@@ -176,15 +109,15 @@
 </a>
 </div>
 
-<form class="bd-search d-flex align-items-center" action="#" method="get">
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="hypothesis.html">
+  <ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Hypothesis
   </a>
  </li>
@@ -236,6 +169,18 @@
             class="fas fa-download"></i></button>
 
     
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/hypothesis.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
 </div>
         <!-- Source interaction buttons -->
 
@@ -251,8 +196,23 @@
 
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#activate-hypothes-is">
+   Activate
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     hypothes.is
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -261,29 +221,22 @@
         
               <div>
                 
-  <h1 id="search-documentation">Search</h1>
-  <div id="fallback" class="admonition warning">
-  <script>$('#fallback').hide();</script>
-  <p>
-    Please activate JavaScript to enable the search
-    functionality.
-  </p>
-  </div>
-  <p>
-    From here you can search these documents. Enter your search
-    words into the box below and click "search". Note that the search
-    function will automatically search for all of the words. Pages
-    containing fewer words won't appear in the result list.
-  </p>
-  <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" />
-    <input type="submit" value="search" />
-    <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
-  
-  <div id="search-results">
-  
-  </div>
+  <div class="section" id="hypothesis">
+<h1>Hypothesis<a class="headerlink" href="#hypothesis" title="Permalink to this headline">¶</a></h1>
+<p>test</p>
+<script async="async" src="https://hypothes.is/embed.js"></script><div class="section" id="activate-hypothes-is">
+<h2>Activate <code class="docutils literal notranslate"><span class="pre">hypothes.is</span></code><a class="headerlink" href="#activate-hypothes-is" title="Permalink to this headline">¶</a></h2>
+<p>You can activate <code class="docutils literal notranslate"><span class="pre">hypothes.is</span></code> by adding the following to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">comments_config</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s2">&quot;hypothesis&quot;</span><span class="p">:</span> <span class="kc">True</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This will add a <a class="reference external" href="https://web.hypothes.is/">hypothes.is overlay</a> to your documentation. This extension simply activates the hypothes.is javascript bundle on your Sphinx site. This will cause the hypothes.is overlay to be shown, allowing your readers to log-in and comment on your documentation if they have questions.</p>
+<p>When you build your documentation, you will see the hypothes.is overlay to the right of your screen.</p>
+</div>
+</div>
+
 
               </div>
               
@@ -293,6 +246,8 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">Sphinx Comments</a>
+    <a class='right-next' id="next-link" href="dokieli.html" title="next page">dokieli</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

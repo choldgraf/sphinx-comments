@@ -1,44 +1,121 @@
 
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Sphinx Hypothes.is &#8212; Sphinx Hypothes.is  documentation</title>
-    
-  <link rel="stylesheet" href="_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
-
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
-    
-      
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
-
-    
+    <title>Sphinx Comments &#8212; Sphinx Hypothes.is  documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-  <link rel="preload" as="script" href="_static/js/index.30270b6e4c972e43c488.js">
-
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/sphinx-book-theme.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/language_data.js"></script>
-    <script async="async" src="https://hypothes.is/embed.js"></script>
     <script src="_static/sphinx-book-theme.js"></script>
+    <script >
+            
+                var commentsRunWhenDOMLoaded = cb => {
+                if (document.readyState != 'loading') {
+                    cb()
+                } else if (document.addEventListener) {
+                    document.addEventListener('DOMContentLoaded', cb)
+                } else {
+                    document.attachEvent('onreadystatechange', function() {
+                    if (document.readyState == 'complete') cb()
+                    })
+                }
+                }
+            
+            var addUtterances = () => {
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "https://utteranc.es/client.js";
+                script.async = "async";
+
+                script.setAttribute("repo", "executablebooks/sphinx-comments");
+                script.setAttribute("issue-term", "pathname");
+                script.setAttribute("theme", "github-light");
+                script.setAttribute("label", "💬 comment");
+                script.setAttribute("crossorigin", "anonymous");
+
+                sections = document.querySelectorAll("div.section");
+                section = sections[sections.length-1];
+                section.appendChild(script);
+            }
+            commentsRunWhenDOMLoaded(addUtterances);
+            </script>
+    <script >
+            
+                var commentsRunWhenDOMLoaded = cb => {
+                if (document.readyState != 'loading') {
+                    cb()
+                } else if (document.addEventListener) {
+                    document.addEventListener('DOMContentLoaded', cb)
+                } else {
+                    document.attachEvent('onreadystatechange', function() {
+                    if (document.readyState == 'complete') cb()
+                    })
+                }
+                }
+            
+            var addUtterances = () => {
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "https://utteranc.es/client.js";
+                script.async = "async";
+
+                script.setAttribute("repo", "executablebooks/sphinx-comments");
+                script.setAttribute("issue-term", "pathname");
+                script.setAttribute("theme", "github-light");
+                script.setAttribute("label", "💬 comment");
+                script.setAttribute("crossorigin", "anonymous");
+
+                sections = document.querySelectorAll("div.section");
+                section = sections[sections.length-1];
+                section.appendChild(script);
+            }
+            commentsRunWhenDOMLoaded(addUtterances);
+            </script>
+    <script >
+            
+                var commentsRunWhenDOMLoaded = cb => {
+                if (document.readyState != 'loading') {
+                    cb()
+                } else if (document.addEventListener) {
+                    document.addEventListener('DOMContentLoaded', cb)
+                } else {
+                    document.attachEvent('onreadystatechange', function() {
+                    if (document.readyState == 'complete') cb()
+                    })
+                }
+                }
+            
+            var addUtterances = () => {
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "https://utteranc.es/client.js";
+                script.async = "async";
+
+                script.setAttribute("repo", "executablebooks/sphinx-comments");
+                script.setAttribute("issue-term", "pathname");
+                script.setAttribute("theme", "github-light");
+                script.setAttribute("label", "💬 comment");
+                script.setAttribute("crossorigin", "anonymous");
+
+                sections = document.querySelectorAll("div.section");
+                section = sections[sections.length-1];
+                section.appendChild(script);
+            }
+            commentsRunWhenDOMLoaded(addUtterances);
+            </script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Hypothesis" href="hypothesis.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -69,7 +146,24 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="hypothesis.html">
+   Hypothesis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dokieli.html">
+   dokieli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="utterances.html">
+   Utterance
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -134,10 +228,17 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> On this page
+            <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation">
+   Installation
+  </a>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -146,9 +247,46 @@
         
               <div>
                 
-  <div class="section" id="sphinx-hypothes-is">
-<h1>Sphinx Hypothes.is<a class="headerlink" href="#sphinx-hypothes-is" title="Permalink to this headline">¶</a></h1>
-<p>Test</p>
+  <div class="section" id="sphinx-comments">
+<h1>Sphinx Comments<a class="headerlink" href="#sphinx-comments" title="Permalink to this headline">¶</a></h1>
+<p>Add comments and annotation functionality to your Sphinx website.</p>
+<p>Currently, two commenting engines are supported:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://hypothes.is/">Hypothes.is</a> provides a web overlay that allows you to annotate and comment collaboratively.</p></li>
+<li><p><a class="reference external" href="https://utteranc.es/">utteranc.es</a> is a web commenting system that uses GitHub Issues to store and manage comments.</p></li>
+</ul>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Clone and install the github reposiory</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/choldgraf/sphinx-comments
+<span class="nb">cd</span> sphinx-comments
+pip install -e .
+</pre></div>
+</div>
+<p>Next, activate the extension by adding it to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
+<span class="n">html_extensions</span> <span class="o">=</span> <span class="p">[</span>
+   <span class="s2">&quot;sphinx_comments&quot;</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hypothesis.html">Hypothesis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hypothesis.html#activate-hypothes-is">Activate <code class="docutils literal notranslate"><span class="pre">hypothes.is</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dokieli.html">dokieli</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dokieli.html#activate-dokie-li">Activate <code class="docutils literal notranslate"><span class="pre">dokie.li</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utterances.html">Utterance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="utterances.html#activate-utteranc-es">Activate <code class="docutils literal notranslate"><span class="pre">utteranc.es</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 </div>
 
 
@@ -160,6 +298,7 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='right-next' id="next-link" href="hypothesis.html" title="next page">Hypothesis</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -178,10 +317,7 @@
       </div>
     </div>
 
-    
-  <script src="_static/js/index.30270b6e4c972e43c488.js"></script>
-
-
+    <script src="_static/js/index.js"></script>
     
   </body>
 </html>
